@@ -61,6 +61,7 @@ end
 
 def runner
   welcome
+<<<<<<< HEAD
   total = initial_round
   
   until total > 21
@@ -68,6 +69,16 @@ def runner
   display_card_total(total)
  end 
   end_game(total)
+=======
+  initial_round
+  
+  until initial_round > 21
+  total = hit?(initial_round)
+  display_card_total(initial_round)
+ end 
+  end_game(initial_round)
+ 
+>>>>>>> f499671f244eea04cb4ae385b40d2ef864e22868
 end
 
 # deal_card
